@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type TimeOfDay = 'morning' | 'afternoon' | 'evening' | 'night';
 
@@ -29,86 +31,143 @@ export default function DynamicGreeting() {
   const content = {
     morning: {
       title: "Good Morning",
+      highlight: "Little Explorers",
       message: "The sun is up and a brand new day of discovery awaits. Let's make today extraordinary.",
-      bgClass: "bg-gradient-to-b from-[#FFF5E1] to-[#FFE0B2]",
+      bgClass: "bg-gradient-to-br from-[#FDFBF7] to-[#FFF5E1]",
+      blobClass: "bg-[#FFE0B2]",
       textClass: "text-[#E65100]",
-      icon: "wb_sunny",
-      iconColor: "text-[#FBC02D]",
-      shadowColor: "rgba(255,235,59,0.8)",
-      circleBg: "bg-white/40"
+      highlightClass: "text-[#F57C00]",
+      messageClass: "text-stone-600",
+      btnClass: "bg-[#F57C00] hover:bg-[#E65100] text-white shadow-[#F57C00]/30",
+      floating: [
+        { icon: 'wb_sunny', class: 'top-[15%] left-[5%] text-[#FBC02D] text-5xl animate-[float-up_6s_ease-in-out_infinite]' },
+        { icon: 'flight', class: 'top-[25%] left-[45%] text-[#64B5F6] text-4xl animate-[float-horizontal_8s_ease-in-out_infinite]' },
+        { icon: 'menu_book', class: 'top-[10%] right-[10%] text-[#81C784] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
+        { icon: 'cruelty_free', class: 'bottom-[20%] left-[10%] text-[#FFB74D] text-6xl animate-[bounce_4s_infinite]' },
+      ]
     },
     afternoon: {
       title: "Good Afternoon",
+      highlight: "Active Minds",
       message: "Our little explorers are busy building, learning, and laughing. Adventure is in full swing!",
-      bgClass: "bg-gradient-to-b from-[#E3F2FD] to-[#BBDEFB]",
+      bgClass: "bg-gradient-to-br from-[#F5F9FF] to-[#E3F2FD]",
+      blobClass: "bg-[#BBDEFB]",
       textClass: "text-[#1565C0]",
-      icon: "local_play",
-      iconColor: "text-[#42A5F5]",
-      shadowColor: "rgba(66,165,245,0.8)",
-      circleBg: "bg-white/50"
+      highlightClass: "text-[#42A5F5]",
+      messageClass: "text-stone-600",
+      btnClass: "bg-[#42A5F5] hover:bg-[#1E88E5] text-white shadow-[#42A5F5]/30",
+      floating: [
+        { icon: 'local_florist', class: 'top-[15%] left-[5%] text-[#E91E63] text-5xl animate-[float-up_6s_ease-in-out_infinite]' },
+        { icon: 'architecture', class: 'top-[30%] left-[40%] text-[#4CAF50] text-4xl animate-[float-horizontal_8s_ease-in-out_infinite]' },
+        { icon: 'sports_soccer', class: 'bottom-[25%] right-[15%] text-[#FF9800] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
+        { icon: 'emoji_nature', class: 'bottom-[15%] left-[8%] text-[#9C27B0] text-6xl animate-[bounce_5s_infinite]' },
+      ]
     },
     evening: {
       title: "Good Evening",
+      highlight: "Dreamers",
       message: "As the day winds down, we celebrate the little victories and stories shared today.",
-      bgClass: "bg-gradient-to-b from-[#F3E5F5] to-[#E1BEE7]",
+      bgClass: "bg-gradient-to-br from-[#FCF8FF] to-[#F3E5F5]",
+      blobClass: "bg-[#E1BEE7]",
       textClass: "text-[#6A1B9A]",
-      icon: "wb_twilight",
-      iconColor: "text-[#AB47BC]",
-      shadowColor: "rgba(171,71,188,0.8)",
-      circleBg: "bg-white/30"
+      highlightClass: "text-[#AB47BC]",
+      messageClass: "text-stone-600",
+      btnClass: "bg-[#AB47BC] hover:bg-[#8E24AA] text-white shadow-[#AB47BC]/30",
+      floating: [
+        { icon: 'wb_twilight', class: 'top-[15%] left-[8%] text-[#FF7043] text-6xl animate-[float-up_6s_ease-in-out_infinite]' },
+        { icon: 'auto_awesome', class: 'top-[25%] left-[45%] text-[#FBC02D] text-4xl animate-[pulse_4s_ease-in-out_infinite]' },
+        { icon: 'park', class: 'bottom-[20%] right-[10%] text-[#4DB6AC] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
+        { icon: 'stars', class: 'bottom-[15%] left-[10%] text-[#FFCA28] text-5xl animate-[float-horizontal_5s_infinite]' },
+      ]
     },
     night: {
       title: "Good Night",
-      message: "As the lanterns dim and the owls take watch, we dream of tomorrow's discoveries. Rest well, little stars.",
-      bgClass: "bg-gradient-to-b from-[#120800] via-[#09102b] to-[#02040a]",
-      textClass: "text-[#E0E0E0]",
-      icon: "bedtime",
-      iconColor: "text-[#FFF59D]",
-      shadowColor: "rgba(255,245,157,0.6)",
-      circleBg: "bg-white/10"
+      highlight: "Little Stars",
+      message: "As the lanterns dim and the owls take watch, we dream of tomorrow's discoveries.",
+      bgClass: "bg-gradient-to-br from-[#050B14] to-[#0A1128]",
+      blobClass: "bg-[#1A237E]/40",
+      textClass: "text-white",
+      highlightClass: "text-[#FFCA28]",
+      messageClass: "text-blue-100/80",
+      btnClass: "bg-[#FFCA28] hover:bg-[#FFB300] text-[#0A1128] font-bold shadow-[#FFCA28]/20",
+      floating: [
+        { icon: 'bedtime', class: 'top-[12%] left-[10%] text-[#FFF59D] text-6xl animate-[float-up_6s_ease-in-out_infinite]' },
+        { icon: 'nights_stay', class: 'top-[30%] left-[40%] text-[#9FA8DA] text-4xl animate-[float-horizontal_8s_ease-in-out_infinite]' },
+        { icon: 'auto_awesome', class: 'bottom-[30%] right-[15%] text-[#FFF59D] text-5xl animate-[pulse_3s_ease-in-out_infinite]' },
+        { icon: 'starlight', class: 'bottom-[15%] left-[15%] text-[#E0E0E0] text-5xl animate-[sway_7s_infinite]' },
+      ]
     }
   };
 
   const current = content[timeOfDay];
 
   return (
-    <section className={`relative pt-24 pb-20 overflow-hidden ${current.bgClass}`} id="greeting">
-      {/* Subtle overlay texture */}
-      <div className="absolute inset-0 paper-texture opacity-30 pointer-events-none"></div>
+    <section className={`relative min-h-[100svh] pt-24 pb-12 flex items-center justify-center overflow-hidden transition-colors duration-[2000ms] ${current.bgClass}`} id="greeting">
       
-      <div className="max-w-container-max mx-auto px-4 md:px-margin-page relative z-10">
-        <div className="flex flex-col items-center text-center space-y-12">
-          
-          {/* Pure CSS Graphic instead of image */}
-          <div className={`relative w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full flex items-center justify-center border-4 border-white/30 shadow-2xl ${current.circleBg} backdrop-blur-md animate-[float-up_6s_ease-in-out_infinite] group`}>
-             {/* Glow effect */}
-             <div className="absolute inset-0 rounded-full blur-2xl opacity-50 transition-all duration-700" style={{ backgroundColor: current.shadowColor.replace('0.8', '0.4').replace('0.6', '0.3') }}></div>
-             
-             {/* Dynamic Icon */}
-             <span 
-                className={`material-symbols-outlined ${current.iconColor} text-7xl md:text-9xl transition-transform duration-700 group-hover:scale-110 relative z-10`} 
-                style={{ 
-                  fontVariationSettings: "'FILL' 1", 
-                  filter: `drop-shadow(0 0 20px ${current.shadowColor})` 
-                }}>
-                  {current.icon}
-              </span>
+      {/* Background Organic Blobs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className={`absolute -right-[10%] -top-[10%] w-[50vw] h-[50vw] rounded-full blur-[120px] opacity-60 transition-colors duration-[2000ms] ${current.blobClass}`}></div>
+        <div className={`absolute -left-[10%] bottom-[10%] w-[40vw] h-[40vw] rounded-full blur-[100px] opacity-40 transition-colors duration-[2000ms] ${current.blobClass}`}></div>
+      </div>
 
-              {/* Magical sparkles */}
-              <span className={`material-symbols-outlined absolute -top-4 -right-4 ${current.iconColor} text-3xl animate-ping opacity-70`}>auto_awesome</span>
-              <span className={`material-symbols-outlined absolute -bottom-4 -left-4 ${current.iconColor} text-4xl animate-[pulse_3s_infinite] opacity-50`}>auto_awesome</span>
-          </div>
+      {/* Floating Elements layer */}
+      <div className="absolute inset-0 pointer-events-none z-10 hidden md:block">
+        {current.floating.map((item, i) => (
+           <span key={i} className={`material-symbols-outlined absolute opacity-80 ${item.class}`} style={{ fontVariationSettings: "'FILL' 1" }}>
+              {item.icon}
+           </span>
+        ))}
+      </div>
 
-          <div className="space-y-6 max-w-2xl px-4">
-            <h2 className={`font-handwritten text-5xl md:text-6xl lg:text-7xl ${current.textClass} drop-shadow-md transform -rotate-2`}>
-              {current.title}
-            </h2>
-            <p className={`font-body-md text-lg md:text-xl ${timeOfDay === 'night' ? 'text-white/80' : 'text-stone-700/90'} max-w-xl mx-auto leading-relaxed`}>
-              {current.message}
-            </p>
+      {/* Subtle paper texture overlay */}
+      <div className="absolute inset-0 z-10 paper-texture opacity-40 pointer-events-none mix-blend-overlay"></div>
+      
+      {/* Split Layout Content */}
+      <div className="relative z-20 w-full max-w-container-max mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center h-full">
+        
+        {/* Left Side: Text and CTA */}
+        <div className="space-y-6 md:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-white/40 backdrop-blur-md border border-white/40 shadow-sm">
+             <span className={`font-label-sm uppercase tracking-widest text-[10px] md:text-xs font-bold ${current.highlightClass}`}>Welcome to Radkliffe</span>
+             <span className="material-symbols-outlined text-sm text-[#FFB300]">auto_awesome</span>
           </div>
           
+          <h1 className={`font-display-lg text-5xl md:text-6xl lg:text-7xl xl:text-[80px] leading-[1.1] ${current.textClass}`}>
+            {current.title} <br className="hidden lg:block" />
+            <span className={current.highlightClass}>{current.highlight}</span>
+          </h1>
+          
+          <p className={`font-body-lg text-lg md:text-xl max-w-lg leading-relaxed ${current.messageClass}`}>
+            {current.message}
+          </p>
+
+          <div className="pt-4">
+             <Link href="#programs" className={`inline-flex items-center gap-3 px-8 py-4 rounded-full font-label-sm uppercase tracking-wider text-sm transition-all hover:scale-105 shadow-xl ${current.btnClass}`}>
+               Apply Today
+               <span className="material-symbols-outlined text-lg">arrow_forward</span>
+             </Link>
+          </div>
         </div>
+
+        {/* Right Side: Hero Visual */}
+        <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square flex items-center justify-center order-1 lg:order-2">
+           {/* Blob mask for the image to mimic the reference image's cutout look */}
+           <div className="relative w-[90%] h-[90%] z-20" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)', borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%' }}>
+              <div className="absolute inset-0 bg-white shadow-2xl rounded-[40%_60%_70%_30%/40%_50%_60%_50%] overflow-hidden animate-[blob-morph_8s_ease-in-out_infinite]">
+                 <Image 
+                   src="/gallery/radkliffe-10.jpeg"
+                   alt="Happy child learning at Radkliffe"
+                   fill
+                   className="object-cover object-center hover:scale-110 transition-transform duration-1000"
+                   priority
+                 />
+              </div>
+           </div>
+           
+           {/* Decorative overlapping blob behind image */}
+           <div className={`absolute top-[10%] right-[0%] w-[70%] h-[70%] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] opacity-50 z-10 animate-[blob-morph_10s_ease-in-out_infinite_reverse] ${current.blobClass}`}></div>
+        </div>
+
       </div>
     </section>
   );
