@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${comfortaa.variable} ${quicksand.variable} ${caveat.variable} scroll-smooth`}
+      className={`${comfortaa.variable} ${quicksand.variable} ${caveat.variable} scroll-smooth overflow-x-hidden`}
     >
       <head>
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
