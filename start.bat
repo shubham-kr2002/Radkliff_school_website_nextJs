@@ -1,0 +1,3 @@
+@echo off
+echo Starting Radkliffe International...
+npm run dev
