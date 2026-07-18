@@ -193,7 +193,7 @@ export default function Gallery() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-7 relative group">
             <div className="hand-drawn-border p-3 bg-surface-container-low shadow-lg rotate-1 hover:rotate-0 transition-all duration-500">
-              <img className="w-full aspect-[4/3] object-cover rounded-sm" alt="Little Builders at Play" src="/gallery/radkliffe-10.jpeg" />
+              <img className="w-full aspect-[4/3] object-cover rounded-sm" alt="Little Builders at Play" src="/gallery/gallery-new-1.jpeg" />
               <div className="mt-4 text-center">
                 <span className="font-body-md text-primary italic border-b border-dashed border-outline-variant px-4 py-1">Little Builders at Play</span>
               </div>
@@ -203,7 +203,7 @@ export default function Gallery() {
 
           <div className="md:col-span-5 relative mt-12 md:mt-0">
             <div className="polaroid-frame -rotate-3 hover:rotate-0 transition-all duration-500">
-              <img className="w-full aspect-square object-cover" alt="Creative Minds" src="/gallery/radkliffe-11.jpeg" />
+              <img className="w-full aspect-square object-cover" alt="Creative Minds" src="/gallery/gallery-new-2.jpeg" />
               <div className="mt-4">
                 <p className="font-display-lg text-primary text-[24px] text-center tracking-tight">Creative Minds</p>
               </div>
@@ -216,7 +216,7 @@ export default function Gallery() {
               <div className="absolute -top-6 -left-6 z-20">
                 <span className="material-symbols-outlined text-tertiary text-5xl floating-element">nest_eco_leaf</span>
               </div>
-              <img className="w-full aspect-[3/4] object-cover rounded-lg" alt="Master Chefs" src="/gallery/radkliffe-14.jpeg" />
+              <img className="w-full aspect-[3/4] object-cover rounded-lg" alt="Master Chefs" src="/gallery/mastercheffs.jpeg" />
               <div className="p-4">
                 <h3 className="font-headline-md text-on-surface mb-2">Master Chefs</h3>
                 <p className="font-body-md text-on-surface-variant">Exploring flavors and textures in our magical kitchen corner.</p>
@@ -228,7 +228,7 @@ export default function Gallery() {
             <div className="relative bg-surface-container p-2 rounded-xl shadow-2xl rotate-[-1deg] hover:rotate-1 transition-all duration-700">
               <div className="washi-tape top-4 -left-4 -rotate-45 bg-secondary/30"></div>
               <div className="washi-tape top-4 -right-4 rotate-45 bg-tertiary/30"></div>
-              <img className="w-full aspect-video object-cover rounded-lg" alt="Memories in Bloom" src="/gallery/radkliffe-2.jpeg" />
+              <img className="w-full aspect-video object-cover rounded-lg" alt="Memories in Bloom" src="/gallery/gallery-new-3.jpeg" />
             </div>
             <div className="mt-6 flex items-center justify-between px-4">
               <span className="material-symbols-outlined text-on-tertiary-container bg-tertiary-container p-2 rounded-full shadow-inner">auto_stories</span>
@@ -239,7 +239,7 @@ export default function Gallery() {
 
           <div className="md:col-span-12 mt-12 relative flex justify-center">
             <div className="max-w-3xl w-full polaroid-frame rotate-1 shadow-2xl hover:scale-[1.02] transition-transform duration-500 group">
-              <img className="w-full h-[400px] object-cover" alt="The Whole Wonder Family" src="/gallery/radkliffe-14.jpeg" />
+              <img className="w-full h-[400px] object-cover" alt="The Whole Wonder Family" src="/gallery/gallery-new-4.jpeg" />
               <div className="mt-6 flex flex-col items-center">
                 <p className="font-display-lg text-primary text-[28px] mb-2">The Whole Wonder Family</p>
                 <div className="w-24 h-1 bg-outline-variant/30 rounded-full"></div>
@@ -278,7 +278,7 @@ export default function Gallery() {
             <div className="relative p-2 bg-white shadow-2xl rotate-[0.5deg] group transition-all duration-1000">
               <div className="clip-decoration"></div>
               <div className="p-1 border border-outline-variant/5">
-                <img alt="The Whole Wonder Family" className="w-full aspect-video object-cover" src="/gallery/radkliffe-2.jpeg"/>
+                <img alt="The Whole Wonder Family" className="w-full aspect-video object-cover" src="/gallery/gallery-new-5.jpeg"/>
               </div>
               <div className="p-8 mt-2 text-center">
                 <p className="handwritten text-2xl text-on-surface-variant italic leading-snug">&quot;The whole family together under the morning sun.&quot;</p>
@@ -302,7 +302,7 @@ export default function Gallery() {
           {/* Photo 5: Cultural Event */}
           <div className="w-full max-w-4xl relative">
             <div className="polaroid-frame rotate-[1deg] shadow-2xl bg-white transition-all duration-1000">
-              <img alt="Cultural Event" className="w-full aspect-square md:aspect-video object-cover" src="/gallery/radkliffe-4.jpeg"/>
+              <img alt="Cultural Event" className="w-full aspect-square md:aspect-video object-cover" src="/gallery/holi.jpeg"/>
               <div className="p-12 text-center">
                 <p className="handwritten text-5xl text-primary mb-4">Heritage and Heart</p>
                 <p className="text-on-surface-variant font-body-md italic text-xl leading-relaxed max-w-lg mx-auto">&quot;Every costume tells a story of our vibrant roots.&quot;</p>

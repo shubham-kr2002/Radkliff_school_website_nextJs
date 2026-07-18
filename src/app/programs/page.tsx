@@ -99,7 +99,7 @@ export default function ProgramsPage() {
               <div className="w-full lg:w-1/2 space-y-10 order-2 lg:order-1 text-center lg:text-left relative">
                 <h1 className="font-display-lg text-5xl md:text-6xl lg:text-7xl text-on-background leading-[1.1] tracking-tight">The Journey Begins.</h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0 leading-relaxed opacity-90">
-                    Welcome to the Radkliffe Express. Our whimsical learning adventure starts at the platform of curiosity and travels through the hills of wonder.
+                    Welcome to the Radkliff Express. Our whimsical learning adventure starts at the platform of curiosity and travels through the hills of wonder.
                 </p>
                 <div className="pt-8">
                   <Link href="#programs" className="wooden-sign inline-block px-14 py-6 rounded-2xl text-white font-headline-md text-xl transform hover:-rotate-1 hover:scale-105 active:scale-95 transition-all duration-300 relative shadow-xl">
@@ -116,7 +116,7 @@ export default function ProgramsPage() {
               <div className="w-full lg:w-1/2 relative order-1 lg:order-2 group py-8">
                 {/* Primary Image Container */}
                 <div className="relative w-full aspect-[4/3] rounded-[3rem] rotate-[2deg] group-hover:rotate-0 transition-all duration-700 z-20">
-                  <img alt="Radkliffe Express Train" className="w-full h-auto rounded-[3rem] shadow-2xl border-4 border-white paper-texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMtpjCvzjGwqHKwfnFd90dF7hSoHGfrQv_f3TNcNISNVei-EuUJYHF5BKWLjbtIBRXrK-vfNX2NHZ8eJOKbXdS9kKpyVGULXkr0XWe9pX8zU1Z2MnHCGzBu2iVkQnA_zjjhZ4MfRyH3wBrpiR7Ol7hyGg9DbMOwHYfiljIf89-wlt0_WbR036iTcP7hGEN8a1N8e6Hg7ZsGDvEP_GxLoR7r7aLg0L6onuk--k8vHYmoHXQHn_eWv2ng"/>
+                  <img alt="Radkliff Express Train" className="w-full h-auto rounded-[3rem] shadow-2xl border-4 border-white paper-texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMtpjCvzjGwqHKwfnFd90dF7hSoHGfrQv_f3TNcNISNVei-EuUJYHF5BKWLjbtIBRXrK-vfNX2NHZ8eJOKbXdS9kKpyVGULXkr0XWe9pX8zU1Z2MnHCGzBu2iVkQnA_zjjhZ4MfRyH3wBrpiR7Ol7hyGg9DbMOwHYfiljIf89-wlt0_WbR036iTcP7hGEN8a1N8e6Hg7ZsGDvEP_GxLoR7r7aLg0L6onuk--k8vHYmoHXQHn_eWv2ng"/>
                   <div className="absolute inset-0 rounded-[3rem] shadow-[inset_0_0_20px_rgba(0,0,0,0.1)] pointer-events-none"></div>
                 </div>
                 

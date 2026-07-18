@@ -44,7 +44,8 @@ export default function DynamicGreeting() {
         { icon: 'flight', class: 'top-[25%] left-[45%] text-[#64B5F6] text-4xl animate-[float-horizontal_8s_ease-in-out_infinite]' },
         { icon: 'menu_book', class: 'top-[10%] right-[10%] text-[#81C784] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
         { icon: 'cruelty_free', class: 'bottom-[20%] left-[10%] text-[#FFB74D] text-6xl animate-[bounce_4s_infinite]' },
-      ]
+      ],
+      imgSrc: "/gallery/gallery-new-7.jpeg"
     },
     afternoon: {
       title: "Good Afternoon",
@@ -61,7 +62,8 @@ export default function DynamicGreeting() {
         { icon: 'architecture', class: 'top-[30%] left-[40%] text-[#4CAF50] text-4xl animate-[float-horizontal_8s_ease-in-out_infinite]' },
         { icon: 'sports_soccer', class: 'bottom-[25%] right-[15%] text-[#FF9800] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
         { icon: 'emoji_nature', class: 'bottom-[15%] left-[8%] text-[#9C27B0] text-6xl animate-[bounce_5s_infinite]' },
-      ]
+      ],
+      imgSrc: "/gallery/gallery-new-9.jpeg"
     },
     evening: {
       title: "Good Evening",
@@ -78,7 +80,8 @@ export default function DynamicGreeting() {
         { icon: 'auto_awesome', class: 'top-[25%] left-[45%] text-[#FBC02D] text-4xl animate-[pulse_4s_ease-in-out_infinite]' },
         { icon: 'park', class: 'bottom-[20%] right-[10%] text-[#4DB6AC] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
         { icon: 'stars', class: 'bottom-[15%] left-[10%] text-[#FFCA28] text-5xl animate-[float-horizontal_5s_infinite]' },
-      ]
+      ],
+      imgSrc: "/gallery/gallery-new-12.jpeg"
     },
     night: {
       title: "Good Night",
@@ -95,7 +98,8 @@ export default function DynamicGreeting() {
         { icon: 'nights_stay', class: 'top-[30%] left-[40%] text-[#9FA8DA] text-4xl animate-[float-horizontal_8s_ease-in-out_infinite]' },
         { icon: 'auto_awesome', class: 'bottom-[30%] right-[15%] text-[#FFF59D] text-5xl animate-[pulse_3s_ease-in-out_infinite]' },
         { icon: 'starlight', class: 'bottom-[15%] left-[15%] text-[#E0E0E0] text-5xl animate-[sway_7s_infinite]' },
-      ]
+      ],
+      imgSrc: "/gallery/gallery-new-14.jpeg"
     }
   };
 
@@ -128,7 +132,7 @@ export default function DynamicGreeting() {
         {/* Left Side: Text and CTA */}
         <div className="space-y-6 md:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-white/40 backdrop-blur-md border border-white/40 shadow-sm">
-             <span className={`font-label-sm uppercase tracking-widest text-[10px] md:text-xs font-bold ${current.highlightClass}`}>Welcome to Radkliffe</span>
+             <span className={`font-label-sm uppercase tracking-widest text-[10px] md:text-xs font-bold ${current.highlightClass}`}>Welcome to Radkliff International</span>
              <span className="material-symbols-outlined text-sm text-[#FFB300]">auto_awesome</span>
           </div>
           
@@ -155,8 +159,8 @@ export default function DynamicGreeting() {
            <div className="relative w-[90%] h-[90%] z-20" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)', borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%' }}>
               <div className="absolute inset-0 bg-white shadow-2xl rounded-[40%_60%_70%_30%/40%_50%_60%_50%] overflow-hidden animate-[blob-morph_8s_ease-in-out_infinite]">
                  <Image 
-                   src="/gallery/radkliffe-10.jpeg"
-                   alt="Happy child learning at Radkliffe"
+                   src={current.imgSrc}
+                   alt="Happy child learning at Radkliff International"
                    fill
                    className="object-cover object-center hover:scale-110 transition-transform duration-1000"
                    priority

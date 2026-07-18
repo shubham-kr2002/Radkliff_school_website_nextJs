@@ -19,7 +19,7 @@ export default function EnquirySection() {
               Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">Journey</span>
             </h2>
             <p className="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed mb-4">
-              We would love to hear from you. Drop by for a visit or send us an enquiry, and let&apos;s talk about your child&apos;s magical future at Radkliffe.
+              We would love to hear from you. Drop by for a visit or send us an enquiry, and let&apos;s talk about your child&apos;s magical future at Radkliff International.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function EnquirySection() {
               </div>
               <div>
                 <p className="font-label-sm uppercase tracking-widest text-[10px] text-on-surface-variant font-bold mb-0.5">Email</p>
-                <a href="mailto:admissions@radkliffe.edu" className="font-body-md text-sm font-medium text-on-surface hover:text-primary transition-colors">admissions@radkliffe.edu</a>
+                <a href="mailto:radkliffejpr@gmail.com" className="font-body-md text-sm font-medium text-on-surface hover:text-primary transition-colors">radkliffejpr@gmail.com</a>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ export default function EnquirySection() {
               <div>
                 <p className="font-label-sm uppercase tracking-widest text-[10px] text-on-surface-variant font-bold mb-0.5">Address</p>
                 <p className="font-body-md text-sm font-medium text-on-surface leading-relaxed">
-                  Radkliffe Campus,<br />
+                  Radkliff International Campus,<br />
                   123 Magic Forest Lane,<br />
                   Wonderland District, 400001
                 </p>

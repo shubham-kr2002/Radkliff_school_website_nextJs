@@ -22,8 +22,8 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Radkliffe International | A Handcrafted Sanctuary of Learning",
-  description: "A handcrafted sanctuary of learning where curiosity is the compass and imagination is the destination.",
+  title: "Radkliff International | A Handcrafted Sanctuary of Learning",
+  description: "A premium early childhood sanctuary blending world-class education with the magic of wonder.",
 };
 
 export default function RootLayout({
