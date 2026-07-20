@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Comfortaa, Quicksand, Caveat } from "next/font/google";
 import Sparkles from "@/components/Sparkles";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import PaperPlanes from "@/components/PaperPlanes";
 import "./globals.css";
 
 const comfortaa = Comfortaa({
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="bg-background font-body-md overflow-x-hidden selection:bg-tertiary-fixed selection:text-on-tertiary-fixed flex flex-col min-h-screen">
         <div className="paper-grain"></div>
         <Sparkles />
+        <PaperPlanes />
         {children}
         <FloatingWhatsApp />
       </body>
