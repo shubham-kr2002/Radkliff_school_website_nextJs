@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import DynamicGreeting from "@/components/DynamicGreeting";
+import PaperSwan from "@/components/PaperSwan";
+import OrigamiDecorations from "@/components/OrigamiDecorations";
 
 export default function Gallery() {
   return (
@@ -11,6 +13,11 @@ export default function Gallery() {
       <Header />
       <main>
         <DynamicGreeting />
+
+        {/* Origami swan drifting near the top of the gallery */}
+        <div className="relative h-20 md:h-24 pointer-events-none" aria-hidden="true">
+          <PaperSwan initialTop="0%" initialLeft="65%" size={96} />
+        </div>
 
         {/* Narrative Block: The Journey */}
         <section className="py-12 md:py-20 bg-surface-container-low px-margin-page relative">
@@ -37,7 +44,12 @@ export default function Gallery() {
             </div>
           </div>
         </section>
-      
+
+        {/* Origami divider */}
+        <section className="relative h-20 md:h-28 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={4} seed={2} verticalRange={[10, 90]} sizeRange={[32, 56]} />
+        </section>
+
         <section id="programs" className="relative pt-16 md:pt-20 pb-16 md:pb-20 px-4 max-w-screen-xl mx-auto overflow-visible watercolor-paper text-on-background">
 
         {/* Storytelling Layer */}
@@ -164,8 +176,14 @@ export default function Gallery() {
             </div>
           </div>
         </div>
-      
+
         </section>
+
+        {/* Origami divider */}
+        <section className="relative h-20 md:h-28 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={5} seed={3} verticalRange={[10, 90]} sizeRange={[32, 56]} />
+        </section>
+
         <section id="gallery" className="pt-16 md:pt-20 pb-16 md:pb-20 px-gutter max-w-container-max mx-auto relative overflow-hidden">
 
         {/* Decorative elements */}
@@ -248,8 +266,14 @@ export default function Gallery() {
             </div>
           </div>
         </div>
-      
+
         </section>
+
+        {/* Origami divider */}
+        <section className="relative h-20 md:h-28 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={4} seed={4} verticalRange={[10, 90]} sizeRange={[32, 56]} />
+        </section>
+
         <section id="memories" className="pt-16 md:pt-20 pb-16 md:pb-20 px-gutter max-w-container-max mx-auto relative font-body-md text-on-surface">
 
         <div className="text-center mb-10 md:mb-16 md:mb-24 relative">

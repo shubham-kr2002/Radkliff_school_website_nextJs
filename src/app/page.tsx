@@ -7,6 +7,8 @@ import Image from "next/image";
 import DynamicGreeting from "@/components/DynamicGreeting";
 import EnquirySection from "@/components/EnquirySection";
 import TeachersSection from "@/components/TeachersSection";
+import FlyingBirds from "@/components/FlyingBirds";
+import TwinklingStars from "@/components/TwinklingStars";
 
 export default function Home() {
   const handleEnquiryClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -34,6 +36,10 @@ export default function Home() {
             <div className="floating-cloud absolute top-[30%] left-[60%] opacity-40" style={{ animationDuration: '45s', animationDelay: '-20s' }}>
               <span className="material-symbols-outlined text-[120px] text-white select-none">cloud</span>
             </div>
+            {/* Flying Birds */}
+            <FlyingBirds />
+            {/* Twinkling Stars */}
+            <TwinklingStars />
           </div>
 
           {/* Hero Content */}
@@ -53,7 +59,7 @@ export default function Home() {
                     A handcrafted sanctuary of learning where curiosity is the compass and imagination is the destination.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 w-full sm:w-auto">
-                  <Link href="#enquiry" onClick={handleEnquiryClick} className="flex items-center justify-center tactile-button bg-[#FFF176] text-[#2C3333] font-bold px-8 md:px-12 py-3 md:py-5 rounded-full border-b-[4px] md:border-b-[6px] border-[#FBC02D] text-base md:text-lg hover:-translate-y-1 transition-transform shadow-xl">
+                  <Link href="#enquiry" onClick={handleEnquiryClick} className="flex items-center justify-center tactile-button magical-glow bg-[#FFF176] text-[#2C3333] font-bold px-8 md:px-12 py-3 md:py-5 rounded-full border-b-[4px] md:border-b-[6px] border-[#FBC02D] text-base md:text-lg hover:-translate-y-1 transition-transform shadow-xl">
                       Enquire Now
                   </Link>
                   <Link className="bg-white/60 backdrop-blur-md border border-white/60 text-[#2E4F4F] font-bold flex items-center justify-center gap-3 px-8 py-3 md:py-5 rounded-full hover:bg-white transition-all group text-base md:text-lg shadow-lg" href="/programs">
@@ -100,7 +106,7 @@ export default function Home() {
                 />
               </div>
               {/* Magical Detail */}
-              <div className="absolute -top-12 -right-12 w-32 h-32 bg-secondary-container rounded-full flex items-center justify-center paper-cut-shadow wiggle-element" style={{ animationDuration: '20s' }}>
+              <div className="absolute -top-12 -right-12 w-32 h-32 bg-secondary-container rounded-full flex items-center justify-center paper-cut-shadow wiggle-element opacity-50" style={{ animationDuration: '20s' }}>
                 <span className="material-symbols-outlined text-secondary text-4xl">palette</span>
               </div>
             </div>

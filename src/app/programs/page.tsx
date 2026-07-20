@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PaperSwan from "@/components/PaperSwan";
+import OrigamiDecorations from "@/components/OrigamiDecorations";
 
 export default function ProgramsPage() {
 
@@ -78,11 +80,18 @@ export default function ProgramsPage() {
                 <div className="absolute top-20 -left-20 w-16 h-16 bg-[#FF9800] rounded-full mix-blend-multiply opacity-80"></div>
                 
                 <Image src="/programme-deer.png" alt="Curriculum Deer" fill className="object-contain drop-shadow-2xl z-10" />
-                
+
                 <div className="absolute bottom-10 -right-10 w-48 h-48 bg-[#FFF176] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] z-0 -rotate-12 animate-[spin_30s_linear_infinite]"></div>
               </div>
+              {/* Origami swan drifting in the curriculum banner */}
+              <PaperSwan initialTop="60%" initialLeft="10%" size={110} />
             </div>
           </div>
+        </section>
+
+        {/* Origami decorations between sections */}
+        <section className="relative h-24 md:h-32 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={5} seed={1} verticalRange={[10, 90]} sizeRange={[32, 56]} />
         </section>
 
         {/* Section: The Journey Begins */}
@@ -114,14 +123,8 @@ export default function ProgramsPage() {
 
               {/* Train Illustration */}
               <div className="w-full lg:w-1/2 relative order-1 lg:order-2 group py-8">
-                {/* Primary Image Container */}
-                <div className="relative w-full aspect-[4/3] rounded-[3rem] rotate-[2deg] group-hover:rotate-0 transition-all duration-700 z-20">
-                  <img alt="Radkliff Express Train" className="w-full h-auto rounded-[3rem] shadow-2xl border-4 border-white paper-texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjMtpjCvzjGwqHKwfnFd90dF7hSoHGfrQv_f3TNcNISNVei-EuUJYHF5BKWLjbtIBRXrK-vfNX2NHZ8eJOKbXdS9kKpyVGULXkr0XWe9pX8zU1Z2MnHCGzBu2iVkQnA_zjjhZ4MfRyH3wBrpiR7Ol7hyGg9DbMOwHYfiljIf89-wlt0_WbR036iTcP7hGEN8a1N8e6Hg7ZsGDvEP_GxLoR7r7aLg0L6onuk--k8vHYmoHXQHn_eWv2ng"/>
-                  <div className="absolute inset-0 rounded-[3rem] shadow-[inset_0_0_20px_rgba(0,0,0,0.1)] pointer-events-none"></div>
-                </div>
-                
                 {/* Secondary Image Container */}
-                <div className="absolute -bottom-12 -left-8 w-2/3 aspect-square rotate-[-6deg] group-hover:-rotate-[2deg] transition-all duration-700 z-30">
+                <div className="relative w-2/3 aspect-square mx-auto rotate-[-6deg] group-hover:-rotate-[2deg] transition-all duration-700 z-30">
                   <div className="relative w-full h-full p-3 bg-white rounded-2xl shadow-2xl">
                     <div className="washi-tape top-2 right-4 rotate-12"></div>
                     <img alt="Children in Heritage Costumes" className="w-full h-full object-cover object-top opacity-95 transition-opacity hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T8pd_v7xjo0Wp0PXHH0NVIlkI6C0DLm0mZB-Ss0zmXph8gNxHPhS5BQZ0-BzhfR4u4yH9pimPhK7ojBSUlHqCuq2pFAv1V6UXf8TKEjhw5Iive2U-roYfXV24XCPyOxqOAUGlGpk943q2vodDd2RzAUrpX7rBmzcF62yVLKa6ZdMh6jxucw-XwNF8zWP56d9KTVhpf5m5Azbdd7KtP6i0KTaXtPlMRN-6N6cwenXlAAE9P4wD3b7gqE3gVpOfVNArhY"/>
@@ -140,6 +143,11 @@ export default function ProgramsPage() {
               <path d="M0,190 C400,150 800,240 1200,180 V240 H0 Z" fill="#120800"></path>
             </svg>
           </div>
+        </section>
+
+        {/* Origami decorations before programs breakdown */}
+        <section className="relative h-24 md:h-32 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={4} seed={2} verticalRange={[10, 90]} sizeRange={[36, 60]} />
         </section>
 
         {/* Programs Breakdown */}

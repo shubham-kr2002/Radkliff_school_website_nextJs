@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import ConfettiBurst from '@/components/ConfettiBurst';
 
 interface SuccessModalProps {
   isOpen: boolean;
@@ -8,26 +9,6 @@ interface SuccessModalProps {
 }
 
 export default function SuccessModal({ isOpen, onClose }: SuccessModalProps) {
-  const [confetti, setConfetti] = useState<{ id: number; left: string; size: string; bg: string; rot: number; delay: number; duration: number }[]>([]);
-
-  useEffect(() => {
-    if (isOpen) {
-      const colors = ['#ffdcc5', '#cee9d3', '#accbdb', '#e8ffeb'];
-      const newConfetti = Array.from({ length: 20 }).map((_, i) => ({
-        id: i,
-        left: Math.random() * 100 + 'vw',
-        size: (Math.random() * 10 + 5) + 'px',
-        bg: colors[Math.floor(Math.random() * colors.length)],
-        rot: Math.random() * 360,
-        delay: Math.random() * 1000,
-        duration: Math.random() * 3000 + 2000,
-      }));
-      setConfetti(newConfetti);
-    } else {
-      setConfetti([]);
-    }
-  }, [isOpen]);
-
   if (!isOpen) return null;
 
   return (
@@ -60,23 +41,8 @@ export default function SuccessModal({ isOpen, onClose }: SuccessModalProps) {
         </div>
       </div>
 
-      {/* Confetti */}
-      {confetti.map(c => (
-        <div
-          key={c.id}
-          className="absolute pointer-events-none z-20"
-          style={{
-            left: c.left,
-            top: '-20px',
-            width: c.size,
-            height: c.size,
-            backgroundColor: c.bg,
-            borderRadius: Math.random() > 0.5 ? '50%' : '2px',
-            opacity: 0,
-            animation: `confetti-fall ${c.duration}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) ${c.delay}ms forwards`,
-          }}
-        ></div>
-      ))}
+      {/* Confetti — animejs-powered pastel burst */}
+      <ConfettiBurst trigger={isOpen} />
 
       {/* Success Message Content */}
       <div className="relative z-10 w-full max-w-lg flex flex-col items-center">
@@ -139,3 +105,4 @@ export default function SuccessModal({ isOpen, onClose }: SuccessModalProps) {
     </div>
   );
 }
+

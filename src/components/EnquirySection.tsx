@@ -77,17 +77,17 @@ export default function EnquirySection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 <div className="space-y-1">
                   <label className="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider ml-2">First Name*</label>
-                  <input type="text" placeholder="John" minLength={2} className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
+                  <input type="text" placeholder="Your first name" minLength={2} className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
                 </div>
                 <div className="space-y-1">
                   <label className="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider ml-2">Last Name*</label>
-                  <input type="text" placeholder="Doe" minLength={2} className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
+                  <input type="text" placeholder="Your last name" minLength={2} className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
                 </div>
               </div>
 
               <div className="space-y-1">
                 <label className="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider ml-2">Email*</label>
-                <input type="email" placeholder="john@example.com" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
+                <input type="email" placeholder="username@example.com" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
@@ -108,23 +108,23 @@ export default function EnquirySection() {
                 </div>
                 <div className="space-y-1">
                   <label className="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider ml-2">State / District*</label>
-                  <input type="text" placeholder="Maharashtra" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
+                  <input type="text" placeholder="Rajasthan" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                 <div className="space-y-1">
                   <label className="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider ml-2">City*</label>
-                  <input type="text" placeholder="Mumbai" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
+                  <input type="text" placeholder="Jaipur" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
                 </div>
                 <div className="space-y-1">
                   <label className="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider ml-2">Location*</label>
-                  <input type="text" placeholder="Andheri West" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
+                  <input type="text" placeholder="Jagatpura" className="w-full bg-surface-container-low border border-outline-variant/50 focus:border-primary px-4 py-2 md:py-2.5 rounded-full font-body-md text-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all shadow-sm" required />
                 </div>
               </div>
               
               <div className="pt-2">
-                <button type="submit" className="w-full tactile-button bg-[#FFF176] text-[#2C3333] font-bold px-6 py-3 rounded-full border-b-[4px] border-[#FBC02D] text-sm md:text-base hover:-translate-y-1 transition-transform shadow-xl flex items-center justify-center gap-2">
+                <button type="submit" className="w-full tactile-button magical-glow bg-[#FFF176] text-[#2C3333] font-bold px-6 py-3 rounded-full border-b-[4px] border-[#FBC02D] text-sm md:text-base hover:-translate-y-1 transition-transform shadow-xl flex items-center justify-center gap-2">
                   Submit Enquiry <span className="material-symbols-outlined text-lg">send</span>
                 </button>
               </div>
