@@ -7,6 +7,36 @@ import DynamicGreeting from "@/components/DynamicGreeting";
 import PaperSwan from "@/components/PaperSwan";
 import OrigamiDecorations from "@/components/OrigamiDecorations";
 
+/**
+ * Sixteen candid photos from /public/impt/, each rendered exactly once in the
+ * "Snapshot Roll" section. Rotations are small and alternating (±1–2°) so the
+ * grid reads as hand-arranged rather than mechanical; `tape` opts a cell into
+ * a polaroid-style washi accent (mirrors the "Memories" section above).
+ */
+const SNAPSHOT_ROLL: ReadonlyArray<{
+  readonly src: string;
+  readonly alt: string;
+  readonly rotate: string;
+  readonly tape?: "blue" | "pink";
+}> = [
+  { src: "/impt/1.jpg",   alt: "Snapshot 1",  rotate: "-rotate-1" },
+  { src: "/impt/2.jpg",   alt: "Snapshot 2",  rotate: "rotate-2" },
+  { src: "/impt/3.jpg",   alt: "Snapshot 3",  rotate: "-rotate-1" },
+  { src: "/impt/4.jpg",   alt: "Snapshot 4",  rotate: "rotate-1",  tape: "blue" },
+  { src: "/impt/5.jpg",   alt: "Snapshot 5",  rotate: "-rotate-2" },
+  { src: "/impt/6.jpeg",  alt: "Snapshot 6",  rotate: "rotate-1" },
+  { src: "/impt/7.jpeg",  alt: "Snapshot 7",  rotate: "-rotate-1" },
+  { src: "/impt/8.jpeg",  alt: "Snapshot 8",  rotate: "rotate-2" },
+  { src: "/impt/9.jpeg",  alt: "Snapshot 9",  rotate: "-rotate-1" },
+  { src: "/impt/10.jpeg", alt: "Snapshot 10", rotate: "rotate-1" },
+  { src: "/impt/11.jpeg", alt: "Snapshot 11", rotate: "-rotate-2" },
+  { src: "/impt/12.jpeg", alt: "Snapshot 12", rotate: "rotate-1",  tape: "pink" },
+  { src: "/impt/13.jpeg", alt: "Snapshot 13", rotate: "-rotate-1" },
+  { src: "/impt/14.jpeg", alt: "Snapshot 14", rotate: "rotate-2" },
+  { src: "/impt/15.jpeg", alt: "Snapshot 15", rotate: "-rotate-1" },
+  { src: "/impt/16.jpeg", alt: "Snapshot 16", rotate: "rotate-1" },
+];
+
 export default function Gallery() {
   return (
     <>
@@ -269,9 +299,64 @@ export default function Gallery() {
 
         </section>
 
-        {/* Origami divider */}
-        <section className="relative h-20 md:h-28 pointer-events-none" aria-hidden="true">
-          <OrigamiDecorations count={4} seed={4} verticalRange={[10, 90]} sizeRange={[32, 56]} />
+        {/* Origami divider — before Snapshot Roll */}
+        <section className="relative h-16 md:h-20 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={3} seed={4} verticalRange={[15, 85]} sizeRange={[32, 52]} />
+        </section>
+
+        {/* Section: The Snapshot Roll — 16 impt/ images, each rendered exactly once */}
+        <section className="pt-12 md:pt-16 pb-12 md:pb-20 px-gutter max-w-container-max mx-auto relative overflow-hidden">
+          {/* Subtle paper background so the section reads as its own spread */}
+          <div className="absolute inset-0 bg-gradient-to-b from-surface-container-low/50 via-transparent to-surface-container-low/40 pointer-events-none rounded-[3rem]"></div>
+
+          {/* Header */}
+          <div className="text-center mb-10 md:mb-14 relative z-10">
+            <span className="inline-flex items-center gap-2 font-label-sm text-primary text-xs uppercase font-black tracking-widest mb-4 opacity-80">
+              <span className="material-symbols-outlined text-base">photo_library</span>
+              Candid Moments
+            </span>
+            <h2 className="font-display-lg text-primary mb-4 drop-shadow-sm text-5xl md:text-6xl">
+              The Snapshot Roll
+            </h2>
+            <p className="font-body-lg text-on-surface-variant max-w-2xl mx-auto italic text-xl">
+              Sixteen tiny treasures from our wonder-filled days.
+            </p>
+            <div className="mt-6 flex justify-center gap-3">
+              <div className="w-12 h-1 bg-tertiary-fixed-dim rounded-full"></div>
+              <div className="w-3 h-1 bg-secondary-fixed-dim rounded-full"></div>
+              <div className="w-12 h-1 bg-tertiary-fixed-dim rounded-full"></div>
+            </div>
+          </div>
+
+          {/* Grid of 16 paper-cut frames */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-7 relative z-10">
+            {SNAPSHOT_ROLL.map((shot) => (
+              <div
+                key={shot.src}
+                className={`relative group ${shot.rotate} hover:rotate-0 transition-transform duration-700`}
+              >
+                <div className="bg-white shadow-xl rounded-[2rem] p-2 aspect-square overflow-hidden">
+                  <img
+                    src={shot.src}
+                    alt={shot.alt}
+                    loading="lazy"
+                    className="w-full h-full object-cover rounded-[1.5rem] scale-100 group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                {shot.tape === "blue" && (
+                  <div className="washi-tape washi-blue -top-3 left-1/4 rotate-12" />
+                )}
+                {shot.tape === "pink" && (
+                  <div className="washi-tape washi-pink -top-3 right-1/4 -rotate-12" />
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Origami divider — after Snapshot Roll */}
+        <section className="relative h-16 md:h-20 pointer-events-none" aria-hidden="true">
+          <OrigamiDecorations count={3} seed={5} verticalRange={[15, 85]} sizeRange={[32, 52]} />
         </section>
 
         <section id="memories" className="pt-16 md:pt-20 pb-16 md:pb-20 px-gutter max-w-container-max mx-auto relative font-body-md text-on-surface">

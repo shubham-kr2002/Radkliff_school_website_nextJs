@@ -131,6 +131,7 @@ should have at least one.** When you add a new one, add a row here.
 | Confetti | `src/components/ConfettiBurst.tsx` | `confettiBurst()` from `motion.ts` | `SuccessModal` on open |
 | Paper swan | `src/components/PaperSwan.tsx` | `randomDrift()` from `motion.ts` + `.paper-swan-svg` keyframe `swan-bob` | `/programs` curriculum banner, `/gallery` top |
 | Origami decoration (crane/heart/flower/star/boat/butterfly) | `src/components/OrigamiDecorations.tsx` | `.origami-decor` keyframe `origami-float` | section dividers on `/programs` and `/gallery` |
+| Snapshot Roll (16 impt/ photos) | (inline in `src/app/gallery/page.tsx`, `SNAPSHOT_ROLL` const) | transform-only hover (`rotate-0`, `scale-105`), `washi-tape` accents on 2 cells | `/gallery` between "A World of Imagination" and "Memories" |
 | Sun glow | (inline) | `.sun-glow` keyframe `pulse-glow` | home sky |
 | Magical CTA pulse | (CSS class) | `.magical-glow` keyframe `magical-pulse` | `Enquire Now`, `Submit Enquiry` |
 | Atmospheric noise | `body::before` (globals.css) | static SVG turbulence overlay | global, behind all content |
