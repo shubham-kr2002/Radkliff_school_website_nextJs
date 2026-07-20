@@ -208,8 +208,8 @@ export default function Home() {
             <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center relative">
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-8 border-primary/10 shadow-[0_20px_50px_rgba(0,0,0,0.1)] group bg-white">
                 <Image 
-                  src="/principal-ai-portrait.png" 
-                  alt="Principal Hemlata Yadav" 
+                  src="/p1.jpeg"
+                  alt="Principal Hemlata Yadav"
                   fill 
                   className="object-cover drop-shadow-xl group-hover:scale-105 transition-transform duration-700 ease-out" 
                 />
