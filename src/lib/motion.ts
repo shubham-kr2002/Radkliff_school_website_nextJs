@@ -71,7 +71,7 @@ export function flyAcross(
     x: [startX, midX, endX],
     y: [baseTop, midY, endY],
     rotate: [0, rotation * 0.5, rotation],
-    duration: `${duration}ms`,
+    duration: duration as any,
     delay,
     ease: "inOutQuad",
   });
@@ -113,19 +113,19 @@ export function flutterLoop(
 
   const anim = animate(el, {
     y: [
-      { to: -amplitude, duration: `${period / 2}ms`, ease: "inOutSine" },
-      { to: amplitude * 0.4, duration: `${period}ms`, ease: "inOutSine" },
-      { to: 0, duration: `${period / 2}ms`, ease: "inOutSine" },
+      { to: -amplitude, duration: period / 2 as any, ease: "inOutSine" },
+      { to: amplitude * 0.4, duration: period as any, ease: "inOutSine" },
+      { to: 0, duration: period / 2 as any, ease: "inOutSine" },
     ],
     rotate: [
-      { to: rotation, duration: `${period / 2}ms`, ease: "inOutSine" },
-      { to: -rotation * 0.6, duration: `${period / 2}ms`, ease: "inOutSine" },
-      { to: 0, duration: `${period}ms`, ease: "inOutSine" },
+      { to: rotation, duration: period / 2 as any, ease: "inOutSine" },
+      { to: -rotation * 0.6, duration: period / 2 as any, ease: "inOutSine" },
+      { to: 0, duration: period as any, ease: "inOutSine" },
     ],
     x: [
-      { to: amplitude * 0.5, duration: `${period}ms`, ease: "inOutSine" },
-      { to: -amplitude * 0.3, duration: `${period}ms`, ease: "inOutSine" },
-      { to: 0, duration: `${period}ms`, ease: "inOutSine" },
+      { to: amplitude * 0.5, duration: period as any, ease: "inOutSine" },
+      { to: -amplitude * 0.3, duration: period as any, ease: "inOutSine" },
+      { to: 0, duration: period as any, ease: "inOutSine" },
     ],
     loop: true,
     alternate: false,
@@ -207,11 +207,11 @@ export function confettiBurst(
     y: () => vh * 0.45 + Math.random() * vh * 0.4,
     rotate: () => (Math.random() - 0.5) * 720,
     opacity: [
-      { to: 1, duration: "80ms" },
-      { to: 1, duration: () => `${baseDuration * 0.6}ms` },
-      { to: 0, duration: () => `${baseDuration * 0.3}ms` },
+      { to: 1, duration: 80 as any },
+      { to: 1, duration: () => baseDuration * 0.6 as any },
+      { to: 0, duration: () => baseDuration * 0.3 as any },
     ],
-    duration: () => `${baseDuration + Math.random() * 600}ms`,
+    duration: () => baseDuration + Math.random() * 600 as any,
     delay: stagger(60),
     ease: "outCubic",
   });
@@ -285,7 +285,7 @@ export function randomDrift(
       x: tx - rect.left,
       y: ty - rect.top,
       rotate: rot,
-      duration: `${dur}ms`,
+      duration: dur as any,
       ease: "inOutSine",
       onComplete: step,
     }) as unknown as { pause?: () => void };
@@ -319,7 +319,7 @@ export function twinkleOnce(
   const anim = animate(el, {
     opacity: [0.2, 1, 0.4, 1, 0.2],
     scale: [0.9, 1.1, 0.95, 1.05, 0.9],
-    duration: `${opts.duration ?? 2400}ms`,
+    duration: opts.duration ?? 2400 as any,
     loop: true,
     ease: "inOutSine",
   });

@@ -10,14 +10,11 @@
 import { useEffect, useRef } from "react";
 import { flyAcross, randomDrift } from "@/lib/motion";
 
-const PLANE_SVG = (
-  <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    {/* Folded paper plane — white with subtle grey crease shadow */}
-    <path d="M2 20 L58 6 L34 20 L58 34 Z" fill="#FFFFFF" stroke="#E5E7EB" strokeWidth="0.6" />
-    <path d="M34 20 L58 6 L40 18 Z" fill="#F3F4F6" />
-    <path d="M34 20 L2 20 L40 18 Z" fill="#FAFAFA" />
-  </svg>
-);
+const PLANE_SVG = `<svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M2 20 L58 6 L34 20 L58 34 Z" fill="#FFFFFF" stroke="#E5E7EB" strokeWidth="0.6" />
+  <path d="M34 20 L58 6 L40 18 Z" fill="#F3F4F6" />
+  <path d="M34 20 L2 20 L40 18 Z" fill="#FAFAFA" />
+</svg>`;
 
 const BUTTERFLY_SVGS = [
   // Peach
@@ -66,7 +63,7 @@ export default function PaperPlanes() {
         will-change: transform, opacity;
         opacity: 0;
       `;
-      plane.innerHTML = PLANE_SVG as unknown as string;
+      plane.innerHTML = PLANE_SVG;
       layer.appendChild(plane);
 
       const direction = i % 2 === 0 ? "leftToRight" : "rightToLeft";
