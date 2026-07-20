@@ -133,8 +133,8 @@ export default function Home() {
               <div className="relative w-full max-w-[500px] aspect-square rounded-[3rem] p-4 md:p-6 group">
                 <div className="absolute inset-0 bg-white shadow-2xl rounded-[3rem] rotate-[-2deg] group-hover:rotate-0 transition-transform duration-700"></div>
                 <div className="absolute inset-0 bg-gradient-to-tr from-secondary/5 to-tertiary/5 rounded-[3rem] rotate-[3deg] group-hover:rotate-0 transition-transform duration-700"></div>
-                <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-[2.5rem]">
-                  <Image src="/about-image-2.png" alt="About Radkliff International" fill className="object-cover group-hover:scale-105 transition-transform duration-1000" />
+                <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-secondary-container/30 via-surface to-tertiary-container/20">
+                  <Image src="/about-image-2.png" alt="About Radkliff International" fill className="object-contain group-hover:scale-105 transition-transform duration-1000" />
                 </div>
                 {/* Magical Washi Tape */}
                 <div className="washi-tape bg-secondary/40 top-0 left-8 rotate-12"></div>
