@@ -6,21 +6,21 @@ export default function TeachersSection() {
     {
       name: "Pushpa",
       role: "Lead Educator",
-      image: "/enhanced_teacher_pushpa.png",
+      image: "/t1.jpeg",
       quote: "Every child is an artist of their own future.",
       bgColor: "bg-[#F5A988]"
     },
     {
       name: "Reena Singh",
       role: "Creative Arts Director",
-      image: "/enhanced_teacher_reena.png",
+      image: "/t2.jpeg",
       quote: "Imagination is the seed from which knowledge grows.",
       bgColor: "bg-[#6BCBE8]"
     },
     {
       name: "Kanchan Jain",
       role: "Early Childhood Specialist",
-      image: "/enhanced_teacher_kanchan.png",
+      image: "/t3.jpeg",
       quote: "Nurturing curiosity today creates the thinkers of tomorrow.",
       bgColor: "bg-[#F9DE74]"
     }
@@ -52,11 +52,13 @@ export default function TeachersSection() {
               <div className={`relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-[4rem] ${teacher.bgColor}/20 p-2 overflow-visible transition-transform duration-500 group-hover:-translate-y-4`}>
                 <div className={`absolute inset-0 ${teacher.bgColor}/40 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                 <div className="w-full h-full rounded-[3.5rem] overflow-hidden relative border-4 border-white shadow-xl group-hover:shadow-2xl transition-all duration-500">
-                  <Image 
-                    src={teacher.image} 
-                    alt={`Portrait of ${teacher.name}`} 
-                    fill 
-                    className="object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" 
+                  <Image
+                    src={teacher.image}
+                    alt={`Portrait of ${teacher.name}`}
+                    fill
+                    priority
+                    sizes="(min-width: 768px) 20rem, 16rem"
+                    className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
               </div>
