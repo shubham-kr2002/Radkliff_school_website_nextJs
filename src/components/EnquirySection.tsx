@@ -104,9 +104,9 @@ export default function EnquirySection() {
                 <div>
                   <p className="font-label-sm uppercase tracking-widest text-[10px] text-on-surface-variant font-bold mb-0.5">Address</p>
                   <p className="font-body-md text-sm font-medium text-on-surface leading-relaxed">
-                    Radkliff International Campus,<br />
-                    123 Magic Forest Lane,<br />
-                    Wonderland District, 400001
+                    C-401 Sidharth nagar, 80ft Road<br />
+                    Near Terminal-2, Jawahar Circle<br />
+                    Jaipur, Rajasthan
                   </p>
                 </div>
               </div>
