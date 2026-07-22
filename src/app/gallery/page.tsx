@@ -109,7 +109,7 @@ export default function Gallery() {
             <div className="w-80 h-80 md:w-[450px] md:h-[450px] relative flex-shrink-0 group-hover:-translate-y-2 transition-transform duration-700">
               <div className="absolute inset-0 bg-[#D8F3DC] rounded-full blur-[80px] opacity-20"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden shadow-lg group-hover:shadow-2xl transition-shadow duration-700">
-                <img alt="Toddlers playing" className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out" src="/gallery/radkliffe-9.jpeg"/>
+                <img alt="Toddlers playing" className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-1000 ease-out" src="/px5.jpeg"/>
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-700 mix-blend-overlay pointer-events-none"></div>
               </div>
               <div className="absolute bottom-10 right-10 text-primary opacity-40 float-animation">
