@@ -63,7 +63,7 @@ export default function DynamicGreeting() {
         { icon: 'sports_soccer', class: 'bottom-[25%] right-[15%] text-[#FF9800] text-5xl animate-[sway_7s_ease-in-out_infinite]' },
         { icon: 'emoji_nature', class: 'bottom-[15%] left-[8%] text-[#9C27B0] text-6xl animate-[bounce_5s_infinite]' },
       ],
-      imgSrc: "/gallery/gallery-new-9.jpeg"
+      imgSrc: "/px1.jpeg"
     },
     evening: {
       title: "Good Evening",
