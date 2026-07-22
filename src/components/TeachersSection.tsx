@@ -58,7 +58,7 @@ export default function TeachersSection() {
                     fill
                     priority
                     sizes="(min-width: 768px) 20rem, 16rem"
-                    className="object-cover object-[center_20%] scale-[0.895] group-hover:scale-[0.945] transition-transform duration-700 ease-out"
+                    className="object-cover object-[center_20%] scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
               </div>
