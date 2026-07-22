@@ -161,7 +161,7 @@ export default function DynamicGreeting() {
                 src={current.imgSrc}
                 alt="Happy child learning at Radkliff International"
                 fill
-                className="object-contain hover:scale-105 transition-transform duration-1000"
+                className="object-cover hover:scale-105 transition-transform duration-1000"
                 priority
                 sizes="(min-width: 1024px) 40vw, 90vw"
               />
