@@ -155,17 +155,16 @@ export default function DynamicGreeting() {
 
         {/* Right Side: Hero Visual */}
         <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square flex items-center justify-center order-1 lg:order-2">
-           {/* Blob mask for the image to mimic the reference image's cutout look */}
-           <div className="relative w-[90%] h-[90%] z-20" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)', borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%' }}>
-              <div className="absolute inset-0 bg-white shadow-2xl rounded-[40%_60%_70%_30%/40%_50%_60%_50%] overflow-hidden animate-[blob-morph_8s_ease-in-out_infinite]">
-                 <Image 
-                   src={current.imgSrc}
-                   alt="Happy child learning at Radkliff International"
-                   fill
-                   className="object-cover object-center hover:scale-110 transition-transform duration-1000"
-                   priority
-                 />
-              </div>
+           {/* Normal circle frame so the full portrait image fits without cropping. */}
+           <div className="relative w-[90%] h-[90%] z-20 rounded-full overflow-hidden bg-white shadow-2xl">
+              <Image
+                src={current.imgSrc}
+                alt="Happy child learning at Radkliff International"
+                fill
+                className="object-contain hover:scale-105 transition-transform duration-1000"
+                priority
+                sizes="(min-width: 1024px) 40vw, 90vw"
+              />
            </div>
            
            {/* Decorative overlapping blob behind image */}
