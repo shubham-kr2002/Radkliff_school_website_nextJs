@@ -132,7 +132,7 @@ export default function DynamicGreeting() {
         {/* Left Side: Text and CTA */}
         <div className="space-y-6 md:space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 md:px-5 md:py-2 rounded-full bg-white/40 backdrop-blur-md border border-white/40 shadow-sm">
-             <span className={`font-label-sm uppercase tracking-widest text-[10px] md:text-xs font-bold ${current.highlightClass}`}>Welcome to Radkliff International</span>
+             <span className={`font-label-sm uppercase tracking-widest text-[10px] md:text-xs font-bold ${current.highlightClass}`}>Welcome to Radkliffe International</span>
              <span className="material-symbols-outlined text-sm text-[#FFB300]">auto_awesome</span>
           </div>
           
@@ -159,7 +159,7 @@ export default function DynamicGreeting() {
            <div className="relative w-[90%] h-[90%] z-20 rounded-full overflow-hidden bg-white shadow-2xl">
               <Image
                 src={current.imgSrc}
-                alt="Happy child learning at Radkliff International"
+                alt="Happy child learning at Radkliffe International"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-1000"
                 priority

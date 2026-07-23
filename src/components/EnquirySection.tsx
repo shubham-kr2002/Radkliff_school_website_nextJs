@@ -69,7 +69,7 @@ export default function EnquirySection() {
                 Start Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">Journey</span>
               </h2>
               <p className="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed mb-4">
-                We would love to hear from you. Drop by for a visit or send us an enquiry, and let&apos;s talk about your child&apos;s magical future at Radkliff International.
+                We would love to hear from you. Drop by for a visit or send us an enquiry, and let&apos;s talk about your child&apos;s magical future at Radkliffe International.
               </p>
             </div>
 
@@ -130,8 +130,8 @@ export default function EnquirySection() {
               <form className="space-y-3 md:space-y-4" onSubmit={handleSubmit}>
                 {/* ---- Web3Forms hidden fields ---- */}
                 <input type="hidden" name="access_key" value={ACCESS_KEY} />
-                <input type="hidden" name="subject" value="New enquiry from Radkliff International website" />
-                <input type="hidden" name="from_name" value="Radkliff Website Enquiry" />
+                <input type="hidden" name="subject" value="New enquiry from Radkliffe International website" />
+                <input type="hidden" name="from_name" value="Radkliffe Website Enquiry" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                   <div className="space-y-1">

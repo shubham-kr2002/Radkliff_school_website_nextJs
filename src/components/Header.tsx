@@ -22,9 +22,9 @@ export default function Header() {
         <div className="w-full md:max-w-container-max mx-auto bg-white/80 backdrop-blur-md border-b md:border border-white/50 rounded-b-3xl md:rounded-full px-6 py-3 flex justify-between items-center shadow-lg shadow-on-background/5">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center wiggle-element shrink-0">
-              <Image src="/radkliffe-logo-clear.png" alt="Radkliff International Logo" width={56} height={56} className="object-contain" />
+              <Image src="/radkliffe-logo-clear.png" alt="Radkliffe International Logo" width={56} height={56} className="object-contain" />
             </div>
-            <span className="font-display-lg text-[18px] md:text-[24px] text-on-surface tracking-tight leading-none pt-1">Radkliff International</span>
+            <span className="font-display-lg text-[18px] md:text-[24px] text-on-surface tracking-tight leading-none pt-1">Radkliffe International</span>
           </Link>
           
           <nav className="hidden lg:flex items-center gap-2">
@@ -57,9 +57,9 @@ export default function Header() {
         <div className="flex justify-between items-center mb-12">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shrink-0">
-              <Image src="/radkliffe-logo-clear.png" alt="Radkliff International Logo" width={48} height={48} className="object-contain" />
+              <Image src="/radkliffe-logo-clear.png" alt="Radkliffe International Logo" width={48} height={48} className="object-contain" />
             </div>
-            <span className="font-display-lg text-[16px] md:text-[20px] text-on-surface leading-tight">Radkliff International</span>
+            <span className="font-display-lg text-[16px] md:text-[20px] text-on-surface leading-tight">Radkliffe International</span>
           </div>
           <button className="p-2 hover:bg-surface-container rounded-full transition-colors" onClick={() => setIsDrawerOpen(false)}>
             <span className="material-symbols-outlined">close</span>

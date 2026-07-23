@@ -6,9 +6,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ---
 
-# Radkliff International — Agent Guide
+# Radkliffe International — Agent Guide
 
-A self-evolving design + engineering reference for the Radkliff International website.
+A self-evolving design + engineering reference for the Radkliffe International website.
 **You are expected to update this file** as you add new tokens, magical elements, or
 AI anti-patterns you've learned from.
 
@@ -16,7 +16,7 @@ AI anti-patterns you've learned from.
 
 ## 1. Project Identity
 
-**Radkliff International** — a premium early-childhood playschool positioning itself
+**Radkliffe International** — a premium early-childhood playschool positioning itself
 as *"A Handcrafted Sanctuary of Learning."* The site is the digital front door for
 parents (decision-makers) and the *experience preview* for the children who'll attend
 (emotional deciders). Every visual choice has to work for both audiences.

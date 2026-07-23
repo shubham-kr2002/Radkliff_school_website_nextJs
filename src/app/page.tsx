@@ -121,7 +121,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Section: About Radkliff International */}
+        {/* Section: About Radkliffe International */}
         <section id="about" className="relative py-16 md:py-24 bg-surface-container-low overflow-hidden px-6 md:px-12">
           {/* Decorative background elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-tertiary/10 rounded-full blur-[80px] pointer-events-none"></div>
@@ -134,7 +134,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-white shadow-2xl rounded-[3rem] rotate-[-2deg] group-hover:rotate-0 transition-transform duration-700"></div>
                 <div className="absolute inset-0 bg-gradient-to-tr from-secondary/5 to-tertiary/5 rounded-[3rem] rotate-[3deg] group-hover:rotate-0 transition-transform duration-700"></div>
                 <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-secondary-container/30 via-surface to-tertiary-container/20">
-                  <Image src="/about-image-2.png" alt="About Radkliff International" fill className="object-contain group-hover:scale-105 transition-transform duration-1000" />
+                  <Image src="/about-image-2.png" alt="About Radkliffe International" fill className="object-contain group-hover:scale-105 transition-transform duration-1000" />
                 </div>
                 {/* Magical Washi Tape */}
                 <div className="washi-tape bg-secondary/40 top-0 left-8 rotate-12"></div>
@@ -151,7 +151,7 @@ export default function Home() {
                 Nurturing the <span className="text-tertiary italic font-black">Future</span>, One Child at a Time.
               </h2>
               <p className="font-body-lg text-base md:text-xl text-on-surface-variant/90 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Nestled in the heart of our community, Radkliff International is a premium sanctuary for early childhood development. We believe that every child is a unique universe of potential waiting to be discovered.
+                Nestled in the heart of our community, Radkliffe International is a premium sanctuary for early childhood development. We believe that every child is a unique universe of potential waiting to be discovered.
               </p>
               
               {/* Features List */}
@@ -233,13 +233,13 @@ export default function Home() {
               
               <div className="space-y-1">
                 <p className="font-bold text-xl md:text-2xl text-tertiary">M.Sc., M.Ed.</p>
-                <p className="font-label-sm text-sm uppercase tracking-wider text-on-surface-variant font-semibold">Principal, Radkliff International</p>
+                <p className="font-label-sm text-sm uppercase tracking-wider text-on-surface-variant font-semibold">Principal, Radkliffe International</p>
               </div>
 
               <div className="h-1 w-16 bg-primary/30 mx-auto md:mx-0 rounded-full"></div>
 
               <p className="font-body-lg text-lg text-on-surface-variant leading-relaxed">
-                Leading with <span className="font-bold text-primary">25+ years of educational experience</span>, she brings a wealth of knowledge, deep compassion, and visionary leadership to Radkliff International. 
+                Leading with <span className="font-bold text-primary">25+ years of educational experience</span>, she brings a wealth of knowledge, deep compassion, and visionary leadership to Radkliffe International. 
               </p>
               
               <p className="font-body-md text-base text-on-surface-variant/90 leading-relaxed">

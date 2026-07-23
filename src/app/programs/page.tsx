@@ -108,7 +108,7 @@ export default function ProgramsPage() {
               <div className="w-full lg:w-1/2 space-y-10 order-2 lg:order-1 text-center lg:text-left relative">
                 <h1 className="font-display-lg text-5xl md:text-6xl lg:text-7xl text-on-background leading-[1.1] tracking-tight">The Journey Begins.</h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0 leading-relaxed opacity-90">
-                    Welcome to the Radkliff Express. Our whimsical learning adventure starts at the platform of curiosity and travels through the hills of wonder.
+                    Welcome to the Radkliffe Express. Our whimsical learning adventure starts at the platform of curiosity and travels through the hills of wonder.
                 </p>
                 <div className="pt-8">
                   <Link href="#programs" className="wooden-sign inline-block px-14 py-6 rounded-2xl text-white font-headline-md text-xl transform hover:-rotate-1 hover:scale-105 active:scale-95 transition-all duration-300 relative shadow-xl">

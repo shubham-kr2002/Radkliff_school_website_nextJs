@@ -13,9 +13,9 @@ export default function Footer() {
         {/* Brand & Identity */}
         <div className="flex flex-col items-start max-w-md">
           <Link href="#home" className="inline-block mb-8 group">
-            <Image src="/radkliffe-logo-clear.png" alt="Radkliff International Logo" width={160} height={160} className="object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
+            <Image src="/radkliffe-logo-clear.png" alt="Radkliffe International Logo" width={160} height={160} className="object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
           </Link>
-          <h3 className="font-display-lg text-4xl text-on-surface tracking-tight mb-4">Radkliff International</h3>
+          <h3 className="font-display-lg text-4xl text-on-surface tracking-tight mb-4">Radkliffe International</h3>
           <p className="font-body-lg text-on-surface-variant leading-relaxed text-lg mb-6">
             AFTD-RBSE English Medium <br/>
             Preparing children for a life filled with wonder, resilience, and empathetic leadership.
@@ -73,7 +73,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="relative z-10 max-w-6xl mx-auto border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
         <p className="text-on-surface-variant/80 font-label-sm text-xs tracking-widest uppercase text-center md:text-left">
-            © {new Date().getFullYear()} Radkliff International. All Rights Reserved.
+            © {new Date().getFullYear()} Radkliffe International. All Rights Reserved.
         </p>
         <div className="flex gap-8 items-center text-on-surface-variant/60">
           <p className="text-[10px] uppercase tracking-widest font-bold">Reg.No. 19654/18-19/142</p>

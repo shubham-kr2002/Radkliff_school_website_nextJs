@@ -38,7 +38,7 @@ export default function TeachersSection() {
             <span className="text-secondary font-label-sm uppercase tracking-widest text-xs font-extrabold">Our Mentors</span>
           </div>
           <h2 className="font-display-lg text-4xl md:text-5xl lg:text-6xl text-on-surface leading-[1.1] tracking-tight">
-            Meet The <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">Heart</span> of Radkliff International
+            Meet The <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">Heart</span> of Radkliffe International
           </h2>
           <p className="font-body-lg text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
             Our exceptional educators are more than just teachers; they are guides, storytellers, and dream-weavers dedicated to unlocking your child's magical potential.
